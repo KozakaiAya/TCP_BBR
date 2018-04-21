@@ -6,7 +6,7 @@ Modified by Yankee@hostloc and nanqinglang.
 ## Build Instructions
 
 ```Bash
-wget -O ./tcp_tsunami.c https://github.com/KozakaiAya/TCP_BBR/raw/master/Master/tcp_tsunami.c
+wget -O ./tcp_tsunami.c https://raw.githubusercontent.com/KozakaiAya/TCP_BBR/master/Master/tcp_tsunami.c
 echo "obj-m:=tcp_tsunami.o" > Makefile
 make -C /lib/modules/$(uname -r)/build M=`pwd` modules CC=/usr/bin/gcc
 cp tcp_tsunami.ko /lib/modules/$(uname -r)/kernel/drivers/
