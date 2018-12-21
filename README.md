@@ -1,5 +1,5 @@
 # TCP_BBR
-The original and forked BBR implementation
+The original and enhanced BBR implementation
 
 Modified by Yankee@hostloc and nanqinglang.
 
@@ -19,6 +19,7 @@ sysctl -p
 ```
 
 **Special note for Linux Kernel 4.15 & gcc 7.3**
+
 For some strange reasons, the compiler cannot find necessary header files. Therefore, ```echo "ccflags-y=-I/usr/lib/gcc/x86_64-linux-gnu/7/include" >> Makefile``` is needed.
 
 **Remark**
