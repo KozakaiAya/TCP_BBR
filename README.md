@@ -24,4 +24,4 @@ For some strange reasons, the compiler cannot find necessary header files. There
 
 ## Remark
 
-Since Linux Kernel v5.1, `bbrplus` no longer need to be updated, because most of its ideas has been merged to the mainline kernel.
+Since Linux Kernel v5.1, `bbrplus` no longer needs to be updated, because most of its ideas have been merged to the mainline kernel.
