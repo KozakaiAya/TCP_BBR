@@ -22,6 +22,6 @@ sysctl -p
 
 For some strange reasons, the compiler cannot find necessary header files. Therefore, ```echo "ccflags-y=-I/usr/lib/gcc/x86_64-linux-gnu/7/include" >> Makefile``` is needed.
 
-**Remark**
+## Remark
 
-`Master` currently keeps up with Ubuntu 16.04 HWE Kernel.
+Since Linux Kernel v5.1, `bbrplus` no longer need to be updated, because most of its ideas has been merged to the mainline kernel.
