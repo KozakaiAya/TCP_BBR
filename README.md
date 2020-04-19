@@ -43,7 +43,7 @@ For some strange reasons, the compiler cannot find necessary header files. There
 |  18.04 | [4.15](https://github.com/KozakaiAya/TCP_BBR/tree/master/code/v4.15) | [5.3](https://github.com/KozakaiAya/TCP_BBR/tree/master/code/v5.3)    | [5.3](https://github.com/KozakaiAya/TCP_BBR/tree/master/code/v5.3)    |
 |  20.04 | [5.4](https://github.com/KozakaiAya/TCP_BBR/tree/master/code/v5.4)   | [5.4](https://github.com/KozakaiAya/TCP_BBR/tree/master/code/v5.4)    | TBA   |
 
-Other version of code can be found [here](https://github.com/KozakaiAya/TCP_BBR/tree/master/code).
+Ubuntu kernel version is obtained from [Ubuntu Packages](https://packages.ubuntu.com/search?suite=all&arch=arm64&searchon=names&keywords=linux-generic). Other supported version of BBR code can be found [here](https://github.com/KozakaiAya/TCP_BBR/tree/master/code).
 
 ## Remark
 
