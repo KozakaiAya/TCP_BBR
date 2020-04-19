@@ -3,7 +3,7 @@ The original and enhanced BBR implementation
 
 Modified by Yankee@hostloc and nanqinglang.
 
-This repository keeps track of `https://elixir.bootlin.com/linux/latest/source/net/ipv4/tcp_bbr.c`.
+This repository keeps track of [tcp_bbr.c](https://elixir.bootlin.com/linux/latest/source/net/ipv4/tcp_bbr.c) from Elixir Bootlin.
 
 ## Installation
 
