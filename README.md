@@ -45,6 +45,10 @@ For some strange reasons, the compiler cannot find necessary header files. There
 
 Ubuntu kernel version is obtained from [Ubuntu Packages](https://packages.ubuntu.com/search?suite=all&arch=arm64&searchon=names&keywords=linux-generic). Other supported version of BBR code can be found [here](https://github.com/KozakaiAya/TCP_BBR/tree/master/code).
 
+## Research Resources
+
+Please refer to [research/README.md](https://github.com/KozakaiAya/TCP_BBR/blob/master/research/README.md).
+
 ## Remark
 
 Since Linux Kernel v5.1, `bbrplus` no longer needs to be updated, because most of its ideas have been merged to the mainline kernel.
