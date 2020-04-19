@@ -16,7 +16,7 @@ This repository keeps track of [tcp_bbr.c](https://elixir.bootlin.com/linux/late
 
 `<algo>` should be chosen from `bbr`, `tsunami`, `nanqinlang` or `bbrplus` (deprecated in v5.1+). The script assumes that the corresponding source code for `<algo>` is `tcp_<algo>.c`.
 
-### Manual installation
+### Manual installation (Deprecated)
 
 ```Bash
 wget -O ./tcp_tsunami.c https://raw.githubusercontent.com/KozakaiAya/TCP_BBR/master/v5.5/tcp_bbr.c
@@ -34,6 +34,16 @@ sysctl -p
 **Special note for Linux Kernel 4.15 & gcc 7.3**
 
 For some strange reasons, the compiler cannot find necessary header files. Therefore, ```echo "ccflags-y=-I/usr/lib/gcc/x86_64-linux-gnu/7/include" >> Makefile``` is needed.
+
+## Supported Ubuntu versions
+
+| Ubuntu |  GA  |  HWE | HWE-Edge |
+|:------:|:----:|:----:|:--------:|
+|  16.04 | N/A                                                                  | [4.15](https://github.com/KozakaiAya/TCP_BBR/tree/master/code/v4.15)  | [4.15](https://github.com/KozakaiAya/TCP_BBR/tree/master/code/v4.15)  |
+|  18.04 | [4.15](https://github.com/KozakaiAya/TCP_BBR/tree/master/code/v4.15) | [5.3](https://github.com/KozakaiAya/TCP_BBR/tree/master/code/v5.3)    | [5.3](https://github.com/KozakaiAya/TCP_BBR/tree/master/code/v5.3)    |
+|  20.04 | [5.4](https://github.com/KozakaiAya/TCP_BBR/tree/master/code/v5.4)   | [5.4](https://github.com/KozakaiAya/TCP_BBR/tree/master/code/v5.4)    | TBA   |
+
+Other version of code can be found [here](https://github.com/KozakaiAya/TCP_BBR/tree/master/code).
 
 ## Remark
 
