@@ -17,7 +17,7 @@ This repository keeps track of [tcp_bbr.c](https://elixir.bootlin.com/linux/late
 
 `<algo>` should be chosen from `bbr`, `tsunami`, `nanqinlang` or `bbrplus` (deprecated in v5.1+). The script assumes that the corresponding source code for `<algo>` is `tcp_<algo>.c`.
 
-### Manual installation (Deprecated)
+### Manual installation (deprecated)
 
 ```Bash
 wget -O ./tcp_tsunami.c https://raw.githubusercontent.com/KozakaiAya/TCP_BBR/master/v5.5/tcp_bbr.c
