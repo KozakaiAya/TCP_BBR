@@ -1,4 +1,4 @@
-# Build Options
+# Installation
 ```Makefile
 echo "obj-m:=sch_fq.o" > Makefile
 make -C /lib/modules/$(uname -r)/build M=`pwd` modules CC=/usr/bin/gcc
