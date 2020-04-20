@@ -1,8 +1,8 @@
 # Research Progress on BBR Congestion Control
 
-## Google ITEF Proceedings
+## Google IETF Proceedings
 
-[ITEF 97 ICCRG: BBR Congestion Control](https://github.com/KozakaiAya/TCP_BBR/blob/master/research/Google%40IETF/slides-97-iccrg-bbr-congestion-control-02.pdf)
+[IETF 97 ICCRG: BBR Congestion Control](https://github.com/KozakaiAya/TCP_BBR/blob/master/research/Google%40IETF/slides-97-iccrg-bbr-congestion-control-02.pdf)
 
 [IETF 98 ICCRG: BBR Congestion Control: An Update](https://github.com/KozakaiAya/TCP_BBR/blob/master/research/Google%40IETF/slides-98-iccrg-an-update-on-bbr-congestion-control-00.pdf)
 
