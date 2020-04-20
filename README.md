@@ -10,10 +10,10 @@ This repository keeps track of [tcp_bbr.c](https://elixir.bootlin.com/linux/late
 
 ### Automated installation
 
-1. Download [install.sh](https://raw.githubusercontent.com/KozakaiAya/TCP_BBR/master/install.sh)
-2. Download the source code of your desired congestion control algorithm w.r.t. your kernel version. 
+1. Download [install.sh](https://raw.githubusercontent.com/KozakaiAya/TCP_BBR/master/install.sh).
+2. Download the source code of your desired congestion control algorithm w.r.t. your kernel version.
 3. Put the source code in the same directory as `install.sh`.
-4. Run `./install.sh <algo>` as root
+4. Run `./install.sh <algo>` as root.
 
 `<algo>` should be chosen from `bbr`, `tsunami`, `nanqinlang` or `bbrplus` (deprecated in v5.1+). The script assumes that the corresponding source code for `<algo>` is `tcp_<algo>.c`.
 
