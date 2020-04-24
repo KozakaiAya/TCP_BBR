@@ -36,7 +36,7 @@ sysctl -p
 
 For some strange reasons, the compiler cannot find necessary header files. Therefore, ```echo "ccflags-y=-I/usr/lib/gcc/x86_64-linux-gnu/7/include" >> Makefile``` is needed.
 
-## Supported Ubuntu versions
+## Supported Ubuntu Versions
 
 | Ubuntu |  GA  |  HWE | HWE-Edge |
 |:------:|:----:|:----:|:--------:|
