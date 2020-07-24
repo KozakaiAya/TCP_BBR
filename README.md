@@ -10,9 +10,9 @@ This repository keeps track of [tcp_bbr.c](https://elixir.bootlin.com/linux/late
 
 ### DKMS installation (recommended)
 
-1. Install [dkms](https://packages.ubuntu.com/focal/dkms)
-2. Download [dkms_install.sh](https://raw.githubusercontent.com/KozakaiAya/TCP_BBR/master/script/dkms_install.sh)
-3. Run the script as root and follow the instuctions.
+1. Install [dkms](https://packages.ubuntu.com/focal/dkms).
+2. Download [dkms_install.sh](https://raw.githubusercontent.com/KozakaiAya/TCP_BBR/master/script/dkms_install.sh).
+3. Run the script as root and follow the instructions.
 
 This script will install BBR as a dkms module, which will be recompiled and reinstalled whenever the kernel gets updated. It will also let the system auto-load the BBR module at boot time and set the default congestion control method to BBR or the variant you choose during the installation.
 
