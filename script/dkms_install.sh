@@ -124,5 +124,3 @@ if [ ! $? -eq 0 ]; then
 fi
 
 echo "===== Installation succeeded, enjoy! ====="
-
-rm -rf $prefix
