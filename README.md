@@ -10,7 +10,7 @@ This repository keeps track of [tcp_bbr.c](https://elixir.bootlin.com/linux/late
 
 ### DKMS installation (recommended)
 
-1. Install [dkms](https://packages.ubuntu.com/focal/dkms).
+1. Install [dkms](https://packages.ubuntu.com/search?suite=all&arch=amd64&searchon=names&keywords=dkms).
 2. Download [dkms_install.sh](https://raw.githubusercontent.com/KozakaiAya/TCP_BBR/master/script/dkms_install.sh).
 3. Run the script as root and follow the instructions.
 
