@@ -113,8 +113,8 @@ fi
 # Auto-load kernel module at system startup
 
 echo $bbr_file | sudo tee -a /etc/modules
-echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
-echo "net.ipv4.tcp_congestion_control=$algo" >> /etc/sysctl.conf
+echo "net.core.default_qdisc = fq" >> /etc/sysctl.conf
+echo "net.ipv4.tcp_congestion_control = $algo" >> /etc/sysctl.conf
 sysctl -p
 
 if [ ! $? -eq 0 ]; then
@@ -124,3 +124,5 @@ if [ ! $? -eq 0 ]; then
 fi
 
 echo "===== Installation succeeded, enjoy! ====="
+
+rm -rf $prefix
