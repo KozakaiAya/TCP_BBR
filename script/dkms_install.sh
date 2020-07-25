@@ -34,18 +34,18 @@ echo "===== Succussfully downloaded $bbr_src ====="
 # Create Makefile
 cat > ./Makefile << EOF
 obj-m:=$bbr_obj
+
 default:
+	make -C /lib/modules/\$(shell uname -r)/build M=\$(PWD)/src modules
 
-    make -C /lib/modules/\$(shell uname -r)/build M=\$(PWD)/src modules
 clean:
-
-    -rm modules.order
-    -rm Module.symvers
-    -rm .[!.]* ..?*
-    -rm $bbr_file.mod
-    -rm $bbr_file.mod.c
-    -rm *.o
-    -rm *.cmd
+	-rm modules.order
+	-rm Module.symvers
+	-rm .[!.]* ..?*
+	-rm $bbr_file.mod
+	-rm $bbr_file.mod.c
+	-rm *.o
+	-rm *.cmd
 EOF
 
 # Create dkms.conf
