@@ -281,7 +281,7 @@ static u32 bbr_tcp_tso_autosize(const struct sock *sk, unsigned int mss_now,
 
 	bytes = min_t(unsigned long,
 		      sk->sk_pacing_rate >> sk->sk_pacing_shift,
-		      sk->sk_gso_max_size - 1 - MAX_TCP_HEADER);
+		      GSO_MAX_SIZE - 1 - MAX_TCP_HEADER);
 
 	/* Goal is to send at least one packet per ms,
 	 * not one big TSO packet every 100 ms.
@@ -858,6 +858,7 @@ static void bbr_init(struct sock *sk)
 
 	bbr->prior_cwnd = 0;
 	bbr->tso_segs_goal = 0;	 /* default segs per skb until first ACK */
+	tp->snd_ssthresh = TCP_INFINITE_SSTHRESH;
 	bbr->rtt_cnt = 0;
 	bbr->next_rtt_delivered = 0;
 	bbr->prev_ca_state = TCP_CA_Open;
