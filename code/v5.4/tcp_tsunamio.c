@@ -130,6 +130,13 @@ static const u32 bbr_probe_rtt_mode_ms = 200;
 /* Skip TSO below the following bandwidth (bits/sec): */
 static const int bbr_min_tso_rate = 1200000;
 
+/* Pace at ~1% below estimated bw, on average, to reduce queue at bottleneck.
+ * In order to help drive the network toward lower queues and low latency while
+ * maintaining high utilization, the average pacing rate aims to be slightly
+ * lower than the estimated bandwidth. This is an important aspect of the
+ * design.
+ */
+static const int bbr_pacing_margin_percent = 1;
 /* We use a high_gain value of 2/ln(2) because it's the smallest pacing gain
  * that will allow a smoothly increasing pacing rate that will double each RTT
  * and send the same number of packets per RTT that an un-paced, slow-starting
@@ -206,10 +213,12 @@ static u32 bbr_bw(const struct sock *sk)
  */
 static u64 bbr_rate_bytes_per_sec(struct sock *sk, u64 rate, int gain)
 {
-	rate *= tcp_mss_to_mtu(sk, tcp_sk(sk)->mss_cache);
+	unsigned int mss = tcp_sk(sk)->mss_cache;
+
+	rate *= mss;
 	rate *= gain;
 	rate >>= BBR_SCALE;
-	rate *= USEC_PER_SEC;
+	rate *= USEC_PER_SEC / 100 * (100 - bbr_pacing_margin_percent);
 	return rate >> BW_SCALE;
 }
 
