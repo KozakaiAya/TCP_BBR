@@ -35,8 +35,10 @@ echo "===== Succussfully downloaded $bbr_src ====="
 cat > ./Makefile << EOF
 obj-m:=$bbr_obj
 default:
+
     make -C /lib/modules/\$(shell uname -r)/build M=\$(PWD)/src modules
 clean:
+
     -rm modules.order
     -rm Module.symvers
     -rm .[!.]* ..?*
