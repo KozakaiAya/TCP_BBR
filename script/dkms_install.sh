@@ -64,7 +64,7 @@ EOF
 # Start dkms install
 echo "===== Start installation ====="
 
-cp -R ./$prefix /usr/src/$algo-$kernel_ver
+cp -R . /usr/src/$algo-$kernel_ver
 
 dkms add -m $algo -v $kernel_ver
 if [ ! $? -eq 0 ]; then
