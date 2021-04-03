@@ -20,9 +20,17 @@
 
 [IETF 106 ICCRG: BBR v2: A Model-based Congestion Control: Performance Optimiazations](https://github.com/KozakaiAya/TCP_BBR/blob/master/research/Google%40IETF/slides-106-iccrg-update-on-bbrv2.pdf)
 
+[IETF 109 ICCRG: BBR Update: 1: BBR.Swift; 2: Scalable Loss Handling](https://github.com/KozakaiAya/TCP_BBR/blob/master/research/Google%40IETF/slides-109-iccrg-update-on-bbrv2-00.pdf)
+
+[IETF 110 ICCRG: BBR Updates:Internal Deployment, Code, Draft Plans](https://github.com/KozakaiAya/TCP_BBR/blob/master/research/Google%40IETF/slides-110-iccrg-bbr-updates-00.pdf)
+
 ## Google Research Papers
 
 [BBR: Congestion-Based Congestion Control](https://github.com/KozakaiAya/TCP_BBR/blob/master/research/papers/CACM_Feb%20'17.pdf)
+
+[Snap: a Microkernel Approach to Host Networking](https://github.com/KozakaiAya/TCP_BBR/blob/master/research/papers/SOSP%20'19.pdf)
+
+[Swift: Delay is Simple and Effective for Congestion Control inthe Datacenter](https://github.com/KozakaiAya/TCP_BBR/blob/master/research/papers/SIGCOMM%20'20.pdf)
 
 ## Other Useful Resources
 
