@@ -24,6 +24,14 @@
 
 [IETF 110 ICCRG: BBR Updates:Internal Deployment, Code, Draft Plans](https://github.com/KozakaiAya/TCP_BBR/blob/master/research/Google%40IETF/slides-110-iccrg-bbr-updates-00.pdf)
 
+[ITEF 112 ICCRG: BBRv2 Update: QUIC Tweaks and Internet Deployment](Google@ITEF/slides-112-iccrg-bbrv2-quic-update-00.pdf)
+
+[ITEF 112 ICCRG: BBRv2 Update: Internet Drafts & Deployment Inside Google](Google@ITEF/slides-112-iccrg-bbrv2-update-00.pdf)
+
+## Microsoft
+
+[ITEF 112 ICCRG: Update on rLEDBAT & BBRv2](Microsoft/slides-112-iccrg-an-update-on-rledbat-and-bbrv2-00.pdf)
+
 ## Google Research Papers
 
 [BBR: Congestion-Based Congestion Control](https://github.com/KozakaiAya/TCP_BBR/blob/master/research/papers/CACM_Feb%20'17.pdf)
