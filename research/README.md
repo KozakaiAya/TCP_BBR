@@ -24,9 +24,9 @@
 
 [IETF 110 ICCRG: BBR Updates:Internal Deployment, Code, Draft Plans](https://github.com/KozakaiAya/TCP_BBR/blob/master/research/Google%40IETF/slides-110-iccrg-bbr-updates-00.pdf)
 
-[ITEF 112 ICCRG: BBRv2 Update: QUIC Tweaks and Internet Deployment](Google%40ITEF/slides-112-iccrg-bbrv2-quic-update-00.pdf)
+[ITEF 112 ICCRG: BBRv2 Update: QUIC Tweaks and Internet Deployment](Google@IETF/slides-112-iccrg-bbrv2-quic-update-00.pdf)
 
-[ITEF 112 ICCRG: BBRv2 Update: Internet Drafts & Deployment Inside Google](Google%40ITEF/slides-112-iccrg-bbrv2-update-00.pdf)
+[ITEF 112 ICCRG: BBRv2 Update: Internet Drafts & Deployment Inside Google](Google@IETF/slides-112-iccrg-bbrv2-update-00.pdf)
 
 ## Microsoft
 
