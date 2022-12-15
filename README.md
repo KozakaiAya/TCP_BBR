@@ -11,14 +11,14 @@ This repository keeps track of [tcp_bbr.c](https://elixir.bootlin.com/linux/late
 ### DKMS installation (recommended)
 
 1. Install [dkms](https://packages.ubuntu.com/search?suite=all&arch=amd64&searchon=names&keywords=dkms).
-2. Download [dkms_install.sh](https://raw.githubusercontent.com/KozakaiAya/TCP_BBR/master/script/dkms_install.sh).
+2. Download [dkms_install.sh](script/dkms_install.sh).
 3. Run the script as root and follow the instructions.
 
 This script will install BBR as a dkms module, which will be recompiled and reinstalled whenever the kernel gets updated. It will also let the system auto-load the BBR module at boot time and set the default congestion control method to BBR or the variant you choose during the installation.
 
 ### Automated installation
 
-1. Download [install.sh](https://raw.githubusercontent.com/KozakaiAya/TCP_BBR/master/script/install.sh).
+1. Download [install.sh](script/install.sh).
 2. Download the source code of your desired congestion control algorithm w.r.t. your kernel version.
 3. Put the source code in the same directory as `install.sh`.
 4. Run `./install.sh <algo>` as root.
@@ -46,17 +46,18 @@ For some strange reasons, the compiler cannot find necessary header files. There
 
 ## Supported Ubuntu Versions
 
-| Ubuntu |  GA  |  HWE | HWE-Edge |
-|:------:|:----:|:----:|:--------:|
-|  16.04 | N/A                                                                  | [4.15](https://github.com/KozakaiAya/TCP_BBR/tree/master/code/v4.15)  | [4.15](https://github.com/KozakaiAya/TCP_BBR/tree/master/code/v4.15)  |
-|  18.04 | [4.15](https://github.com/KozakaiAya/TCP_BBR/tree/master/code/v4.15) | [5.4](https://github.com/KozakaiAya/TCP_BBR/tree/master/code/v5.4)    | [5.4](https://github.com/KozakaiAya/TCP_BBR/tree/master/code/v5.4)    |
-|  20.04 | [5.4](https://github.com/KozakaiAya/TCP_BBR/tree/master/code/v5.4)   | [5.4](https://github.com/KozakaiAya/TCP_BBR/tree/master/code/v5.4)    | [5.8](https://github.com/KozakaiAya/TCP_BBR/tree/master/code/v5.8)   |
+| Ubuntu |         GA         |         HWE        |       HWE-Edge     |
+|:------:|:------------------:|:------------------:|:------------------:|
+|  16.04 | N/A                | [4.15](code/v4.15) | [4.15](code/v4.15) |
+|  18.04 | [4.15](code/v4.15) | [5.4](code/v5.4)   | [5.4](code/v5.4)   |
+|  20.04 | [5.4](code/v5.4)   | [5.15](code/v5.15) | [5.15](code/v5.15) |
+|  22.04 | [5.15](code/v5.15) | [5.15](code/v5.15) | [5.15](code/v5.15) |
 
-Ubuntu kernel version is obtained from [Ubuntu Packages](https://packages.ubuntu.com/search?suite=all&arch=amd64&searchon=names&keywords=linux-generic). Other supported version of BBR code can be found [here](https://github.com/KozakaiAya/TCP_BBR/tree/master/code).
+Ubuntu kernel version is obtained from [Ubuntu Packages](https://packages.ubuntu.com/search?suite=all&arch=amd64&searchon=names&keywords=linux-generic). Other supported version of BBR code can be found [here](code).
 
 ## Research Resources
 
-Please refer to [research/README.md](https://github.com/KozakaiAya/TCP_BBR/blob/master/research/README.md).
+Please refer to [research/README.md](research/README.md).
 
 ## Remark
 
